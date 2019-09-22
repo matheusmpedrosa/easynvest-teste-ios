@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		80BE5D8B2336CF46009B90C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BE5D8A2336CF46009B90C7 /* AppDelegate.swift */; };
-		80BE5D8D2336CF46009B90C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BE5D8C2336CF46009B90C7 /* ViewController.swift */; };
 		80BE5D902336CF46009B90C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80BE5D8E2336CF46009B90C7 /* Main.storyboard */; };
 		80BE5D922336CF47009B90C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80BE5D912336CF47009B90C7 /* Assets.xcassets */; };
 		80BE5D952336CF47009B90C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80BE5D932336CF47009B90C7 /* LaunchScreen.storyboard */; };
+		80BE5D9E2336D08E009B90C7 /* InvestmentFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BE5D9D2336D08E009B90C7 /* InvestmentFormViewController.swift */; };
+		80BE5DA02336D0A1009B90C7 /* InvestmentResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BE5D9F2336D0A1009B90C7 /* InvestmentResultViewController.swift */; };
+		80BE5DA22336D0B4009B90C7 /* InvestmentFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BE5DA12336D0B4009B90C7 /* InvestmentFormView.swift */; };
+		80BE5DA42336D0C0009B90C7 /* InvestmentResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BE5DA32336D0C0009B90C7 /* InvestmentResultView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		80BE5D872336CF46009B90C7 /* easynvest-teste-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "easynvest-teste-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80BE5D8A2336CF46009B90C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		80BE5D8C2336CF46009B90C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		80BE5D8F2336CF46009B90C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		80BE5D912336CF47009B90C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80BE5D942336CF47009B90C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80BE5D962336CF47009B90C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80BE5D9D2336D08E009B90C7 /* InvestmentFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentFormViewController.swift; sourceTree = "<group>"; };
+		80BE5D9F2336D0A1009B90C7 /* InvestmentResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentResultViewController.swift; sourceTree = "<group>"; };
+		80BE5DA12336D0B4009B90C7 /* InvestmentFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentFormView.swift; sourceTree = "<group>"; };
+		80BE5DA32336D0C0009B90C7 /* InvestmentResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentResultView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,41 @@
 		80BE5D892336CF46009B90C7 /* easynvest-teste-ios */ = {
 			isa = PBXGroup;
 			children = (
-				80BE5D8A2336CF46009B90C7 /* AppDelegate.swift */,
-				80BE5D8C2336CF46009B90C7 /* ViewController.swift */,
+				80BE5D9C2336D049009B90C7 /* Resources */,
+				80BE5DA62336D0D7009B90C7 /* ViewControllers */,
+				80BE5DA52336D0CC009B90C7 /* Views */,
+			);
+			path = "easynvest-teste-ios";
+			sourceTree = "<group>";
+		};
+		80BE5D9C2336D049009B90C7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				80BE5D8E2336CF46009B90C7 /* Main.storyboard */,
+				80BE5D8A2336CF46009B90C7 /* AppDelegate.swift */,
 				80BE5D912336CF47009B90C7 /* Assets.xcassets */,
 				80BE5D932336CF47009B90C7 /* LaunchScreen.storyboard */,
 				80BE5D962336CF47009B90C7 /* Info.plist */,
 			);
-			path = "easynvest-teste-ios";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		80BE5DA52336D0CC009B90C7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				80BE5DA12336D0B4009B90C7 /* InvestmentFormView.swift */,
+				80BE5DA32336D0C0009B90C7 /* InvestmentResultView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		80BE5DA62336D0D7009B90C7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				80BE5D9D2336D08E009B90C7 /* InvestmentFormViewController.swift */,
+				80BE5D9F2336D0A1009B90C7 /* InvestmentResultViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80BE5D8D2336CF46009B90C7 /* ViewController.swift in Sources */,
+				80BE5DA02336D0A1009B90C7 /* InvestmentResultViewController.swift in Sources */,
 				80BE5D8B2336CF46009B90C7 /* AppDelegate.swift in Sources */,
+				80BE5DA42336D0C0009B90C7 /* InvestmentResultView.swift in Sources */,
+				80BE5D9E2336D08E009B90C7 /* InvestmentFormViewController.swift in Sources */,
+				80BE5DA22336D0B4009B90C7 /* InvestmentFormView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +320,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R95CT9ATA8;
-				INFOPLIST_FILE = "easynvest-teste-ios/Info.plist";
+				INFOPLIST_FILE = "easynvest-teste-ios/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +339,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R95CT9ATA8;
-				INFOPLIST_FILE = "easynvest-teste-ios/Info.plist";
+				INFOPLIST_FILE = "easynvest-teste-ios/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

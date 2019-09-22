@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  InvestmentResultViewController.swift
 //  easynvest-teste-ios
 //
 //  Created by Matheus Pedrosa on 9/21/19.
@@ -8,13 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class InvestmentResultViewController: UIViewController {
+    
+    @IBOutlet weak var mainView: InvestmentResultView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
 }
-
