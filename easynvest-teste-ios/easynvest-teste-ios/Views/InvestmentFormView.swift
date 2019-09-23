@@ -40,7 +40,9 @@ class InvestmentFormView: UIView {
             guard let rate = investmentCDIRateTextField.text else { return }
             guard let maturityDate = maturityDateTextField.text else { return }
             
-            let investmentFormViewModel = InvestmentFormViewModel(investedAmount: investedAmount, rate: rate, maturityDate: maturityDate)
+            let investmentFormViewModel = InvestmentFormViewModel(investedAmount: investedAmount,
+                                                                  rate: rate,
+                                                                  maturityDate: dateMask(from: maturityDate))
             let params = investmentFormViewModel.params
             
             APIInvestmentRepository.getInvestiment(params: params) { (result) in
@@ -90,12 +92,6 @@ extension InvestmentFormView: UITextFieldDelegate {
             simulateButton.isEnabled = false
         }
     }
-    
-//    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-//        if textField == maturityDateTextField {
-//            return Mask
-//        }
-//    }
 }
 
 extension InvestmentFormView {
@@ -104,5 +100,28 @@ extension InvestmentFormView {
             return true
         }
         return false
+    }
+    
+    func dateMask(from string: String) -> String {
+        let dateFromString = stringToDate(from: string)
+        let stringFromDate = dateToString(from: dateFromString)
+        return stringFromDate
+    }
+    
+    func stringToDate(from string: String) -> Date {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd/MM/yyyy"
+        dateFormatter.locale = Locale(identifier: "pt_BR")
+        if let date = dateFormatter.date(from:string) {
+            return date
+        }
+        return Date()
+    }
+    
+    func dateToString(from date: Date) -> String{
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        let string = dateFormatter.string(from: date)
+        return string
     }
 }
