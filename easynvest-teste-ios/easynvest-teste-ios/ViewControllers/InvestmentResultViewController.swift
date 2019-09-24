@@ -27,11 +27,18 @@ class InvestmentResultViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        mainView.delegate = self
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         delegate?.InvestmentResultViewDidLayoutSubviews()
+    }
+}
+
+extension InvestmentResultViewController: InvestmentResultViewProtocol {
+    func dismissInvestmentResultViewController() {
+        self.dismiss(animated: true, completion: nil)
     }
 }
 

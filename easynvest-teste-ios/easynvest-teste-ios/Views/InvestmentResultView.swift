@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol InvestmentResultViewProtocol: class {
+    func dismissInvestmentResultViewController()
+}
+
 class InvestmentResultView: UIView {
 
     @IBOutlet weak var investmentResultLabel: UILabel!
@@ -19,6 +23,7 @@ class InvestmentResultView: UIView {
             tableView.dataSource = self
             tableView.separatorStyle = .none
             tableView.alwaysBounceVertical = false
+            setupTableViewFooterView()
         }
     }
     var investmentResult: Investment? {
@@ -32,6 +37,8 @@ class InvestmentResultView: UIView {
         }
     }
     let investmentResultViewModel = InvestmentResultViewModel()
+    var simulateAgainView: SimulateAgainView?
+    weak var delegate: InvestmentResultViewProtocol?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -43,7 +50,11 @@ class InvestmentResultView: UIView {
 }
 
 extension InvestmentResultView {
-    
+    func setupTableViewFooterView() {
+        let frame = CGRect(x: 16, y: 0, width: UIScreen.main.bounds.width - 32, height: 50)
+        simulateAgainView = SimulateAgainView(frame: frame, delegate: self)
+        tableView.tableFooterView = simulateAgainView
+    }
 }
 
 extension InvestmentResultView: UITableViewDataSource {
@@ -69,5 +80,11 @@ extension InvestmentResultView: InvestmentResultViewControllerProtocol {
             investmentResultValueLabel.text = investmentResultViewModel.toBrazilianReal(double: result.grossAmount)
             profitabilityValueLabel.text = investmentResultViewModel.toBrazilianReal(double: result.grossAmountProfit)
         }
+    }
+}
+
+extension InvestmentResultView: SimulateAgainViewProtocol {
+    func dismissInvestmentResultViewController() {
+        delegate?.dismissInvestmentResultViewController()
     }
 }

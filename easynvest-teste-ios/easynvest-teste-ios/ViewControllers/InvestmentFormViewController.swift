@@ -15,6 +15,7 @@ class InvestmentFormViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         mainView.delegate = self
+        hideKeyboardWhenTappedAround()
     }
 }
 

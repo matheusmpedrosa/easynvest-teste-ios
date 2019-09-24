@@ -25,7 +25,9 @@
 		80BE5DB823384946009B90C7 /* APIInvestmentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BE5DB723384946009B90C7 /* APIInvestmentRepository.swift */; };
 		80BE5DBE23385667009B90C7 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BE5DBD23385667009B90C7 /* Request.swift */; };
 		80BE5DC023385AEC009B90C7 /* InvestmentFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BE5DBF23385AEC009B90C7 /* InvestmentFormViewModel.swift */; };
+		80C898FC233A9574003958AC /* SimulateAgainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C898FB233A9574003958AC /* SimulateAgainView.swift */; };
 		80D925E7233A8EC100929952 /* UIViewControllerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D925E6233A8EC100929952 /* UIViewControllerUtils.swift */; };
+		80D925E9233A90D400929952 /* SimulateAgainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80D925E8233A90D400929952 /* SimulateAgainView.xib */; };
 		80E4E68523399F5F0089A6E2 /* InvestmentResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E4E68423399F5F0089A6E2 /* InvestmentResultViewModel.swift */; };
 		80E4E687233A27C50089A6E2 /* ParameterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E4E686233A27C50089A6E2 /* ParameterManager.swift */; };
 		80E4E692233A59930089A6E2 /* RightDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E4E691233A59930089A6E2 /* RightDetailTableViewCell.swift */; };
@@ -66,7 +68,9 @@
 		80BE5DB723384946009B90C7 /* APIInvestmentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIInvestmentRepository.swift; sourceTree = "<group>"; };
 		80BE5DBD23385667009B90C7 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		80BE5DBF23385AEC009B90C7 /* InvestmentFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentFormViewModel.swift; sourceTree = "<group>"; };
+		80C898FB233A9574003958AC /* SimulateAgainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulateAgainView.swift; sourceTree = "<group>"; };
 		80D925E6233A8EC100929952 /* UIViewControllerUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerUtils.swift; sourceTree = "<group>"; };
+		80D925E8233A90D400929952 /* SimulateAgainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimulateAgainView.xib; sourceTree = "<group>"; };
 		80E4E68423399F5F0089A6E2 /* InvestmentResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentResultViewModel.swift; sourceTree = "<group>"; };
 		80E4E686233A27C50089A6E2 /* ParameterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterManager.swift; sourceTree = "<group>"; };
 		80E4E691233A59930089A6E2 /* RightDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightDetailTableViewCell.swift; sourceTree = "<group>"; };
@@ -249,6 +253,8 @@
 			isa = PBXGroup;
 			children = (
 				80E4E691233A59930089A6E2 /* RightDetailTableViewCell.swift */,
+				80D925E8233A90D400929952 /* SimulateAgainView.xib */,
+				80C898FB233A9574003958AC /* SimulateAgainView.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -347,6 +353,7 @@
 			files = (
 				80BE5D952336CF47009B90C7 /* LaunchScreen.storyboard in Resources */,
 				80BE5D922336CF47009B90C7 /* Assets.xcassets in Resources */,
+				80D925E9233A90D400929952 /* SimulateAgainView.xib in Resources */,
 				80BE5D902336CF46009B90C7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,6 +483,7 @@
 				80BE5DAB233840F1009B90C7 /* InvestmentParameter.swift in Sources */,
 				80BE5DA22336D0B4009B90C7 /* InvestmentFormView.swift in Sources */,
 				80E4E692233A59930089A6E2 /* RightDetailTableViewCell.swift in Sources */,
+				80C898FC233A9574003958AC /* SimulateAgainView.swift in Sources */,
 				80BE5DB223384365009B90C7 /* InvestmentDTOMapper.swift in Sources */,
 				80BE5DC023385AEC009B90C7 /* InvestmentFormViewModel.swift in Sources */,
 			);
@@ -688,7 +696,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.m2p.easynvest-teste-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -709,7 +717,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.m2p.easynvest-teste-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
