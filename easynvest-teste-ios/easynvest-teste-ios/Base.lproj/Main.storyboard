@@ -230,7 +230,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Sdb-lU-0fa">
-                                        <rect key="frame" x="94.5" y="164" width="225" height="19.5"/>
+                                        <rect key="frame" x="92" y="164" width="230.5" height="19.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rendimento total de" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2nB-c2-XiK">
                                                 <rect key="frame" x="0.0" y="0.0" width="146" height="19.5"/>
@@ -239,16 +239,42 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 100,00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ggf-ps-OUA">
-                                                <rect key="frame" x="151" y="0.0" width="74" height="19.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                <nil key="textColor"/>
+                                                <rect key="frame" x="151" y="0.0" width="79.5" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                <color key="textColor" name="clr-easynvest-green"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HlT-OA-Ho3">
-                                        <rect key="frame" x="0.0" y="198.5" width="414" height="697.5"/>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="HlT-OA-Ho3">
+                                        <rect key="frame" x="0.0" y="188.5" width="414" height="707.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="rightDetailCell" textLabel="u4B-nR-SlX" detailTextLabel="nx0-gP-jVj" style="IBUITableViewCellStyleValue1" id="wd1-CI-MAz" customClass="RightDetailTableViewCell" customModule="easynvest_teste_ios" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="55.5" width="414" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wd1-CI-MAz" id="wds-9m-tEk">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="u4B-nR-SlX">
+                                                            <rect key="frame" x="20" y="12" width="31.5" height="19.5"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nx0-gP-jVj">
+                                                            <rect key="frame" x="352.5" y="12" width="41.5" height="19.5"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
                                     </tableView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -260,7 +286,7 @@
                                     <constraint firstItem="6sw-Nz-EWq" firstAttribute="top" secondItem="6rq-hy-L0G" secondAttribute="bottom" constant="15" id="d0N-bK-KNI"/>
                                     <constraint firstItem="Sdb-lU-0fa" firstAttribute="top" secondItem="6sw-Nz-EWq" secondAttribute="bottom" constant="15" id="dKL-pg-fMB"/>
                                     <constraint firstItem="6rq-hy-L0G" firstAttribute="centerX" secondItem="Yuw-C2-5ZY" secondAttribute="centerX" id="eeS-Rg-ZPJ"/>
-                                    <constraint firstItem="HlT-OA-Ho3" firstAttribute="top" secondItem="Sdb-lU-0fa" secondAttribute="bottom" constant="15" id="vMv-4M-UAy"/>
+                                    <constraint firstItem="HlT-OA-Ho3" firstAttribute="top" secondItem="Sdb-lU-0fa" secondAttribute="bottom" constant="5" id="vMv-4M-UAy"/>
                                     <constraint firstAttribute="trailing" secondItem="HlT-OA-Ho3" secondAttribute="trailing" id="yJm-2n-Mk0"/>
                                 </constraints>
                                 <connections>
@@ -294,6 +320,9 @@
     <resources>
         <namedColor name="clr-easynvest-gray">
             <color red="0.76470588235294112" green="0.792156862745098" blue="0.78823529411764703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="clr-easynvest-green">
+            <color red="0.090196078431372548" green="0.78431372549019607" blue="0.70196078431372544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

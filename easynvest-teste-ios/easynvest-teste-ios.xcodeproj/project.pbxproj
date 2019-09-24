@@ -24,6 +24,8 @@
 		80BE5DBE23385667009B90C7 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BE5DBD23385667009B90C7 /* Request.swift */; };
 		80BE5DC023385AEC009B90C7 /* InvestmentFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BE5DBF23385AEC009B90C7 /* InvestmentFormViewModel.swift */; };
 		80E4E68523399F5F0089A6E2 /* InvestmentResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E4E68423399F5F0089A6E2 /* InvestmentResultViewModel.swift */; };
+		80E4E687233A27C50089A6E2 /* ParameterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E4E686233A27C50089A6E2 /* ParameterManager.swift */; };
+		80E4E692233A59930089A6E2 /* RightDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E4E691233A59930089A6E2 /* RightDetailTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		80BE5DBD23385667009B90C7 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		80BE5DBF23385AEC009B90C7 /* InvestmentFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentFormViewModel.swift; sourceTree = "<group>"; };
 		80E4E68423399F5F0089A6E2 /* InvestmentResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentResultViewModel.swift; sourceTree = "<group>"; };
+		80E4E686233A27C50089A6E2 /* ParameterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterManager.swift; sourceTree = "<group>"; };
+		80E4E691233A59930089A6E2 /* RightDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightDetailTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 			children = (
 				80BE5DA12336D0B4009B90C7 /* InvestmentFormView.swift */,
 				80BE5DA32336D0C0009B90C7 /* InvestmentResultView.swift */,
+				80E4E693233A59DC0089A6E2 /* Cells */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -151,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				80BE5DB723384946009B90C7 /* APIInvestmentRepository.swift */,
+				80E4E686233A27C50089A6E2 /* ParameterManager.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -162,6 +168,14 @@
 				80E4E68423399F5F0089A6E2 /* InvestmentResultViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		80E4E693233A59DC0089A6E2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				80E4E691233A59930089A6E2 /* RightDetailTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +252,7 @@
 				80BE5DA02336D0A1009B90C7 /* InvestmentResultViewController.swift in Sources */,
 				80BE5DBE23385667009B90C7 /* Request.swift in Sources */,
 				80BE5D8B2336CF46009B90C7 /* AppDelegate.swift in Sources */,
+				80E4E687233A27C50089A6E2 /* ParameterManager.swift in Sources */,
 				80BE5DAF233842E1009B90C7 /* InvestmentParameterDTO.swift in Sources */,
 				80BE5DAD233842A6009B90C7 /* InvestmentDTO.swift in Sources */,
 				80BE5DA42336D0C0009B90C7 /* InvestmentResultView.swift in Sources */,
@@ -247,6 +262,7 @@
 				80BE5DB823384946009B90C7 /* APIInvestmentRepository.swift in Sources */,
 				80BE5DAB233840F1009B90C7 /* InvestmentParameter.swift in Sources */,
 				80BE5DA22336D0B4009B90C7 /* InvestmentFormView.swift in Sources */,
+				80E4E692233A59930089A6E2 /* RightDetailTableViewCell.swift in Sources */,
 				80BE5DB223384365009B90C7 /* InvestmentDTOMapper.swift in Sources */,
 				80BE5DC023385AEC009B90C7 /* InvestmentFormViewModel.swift in Sources */,
 			);

@@ -52,22 +52,25 @@ class InvestmentFormView: UIView {
     
     
     @IBAction func simulateButtonClicked(_ sender: UIButton) {
-        if allTextFieldsFilled() {
+        if !allTextFieldsFilled() {
             guard let investedAmount = investedAmountTextField.text else { return }
             guard let rate = investmentCDIRateTextField.text else { return }
             guard let maturityDate = maturityDateTextField.text else { return }
             
-            let requestParams = Request(investedAmount: investedAmount,
-                                        rate: rate,
-                                        maturityDate: investmentFormViewModel.dateMask(from: maturityDate))
+            let requestForTest = Request(investedAmount: "1234", rate: "123", maturityDate: "2022-06-14")
+            let testParams = requestForTest.params
             
-            let params = requestParams.params
-            
-            APIInvestmentRepository.getInvestiment(params: params) { (result) in
+//            let requestParams = Request(investedAmount: investedAmount,
+//                                        rate: rate,
+//                                        maturityDate: investmentFormViewModel.dateMask(from: maturityDate))
+
+//            let params = requestParams.params
+
+            APIInvestmentRepository.getInvestiment(params: testParams) { (result) in
                 if let result = result {
                     self.delegate?.presentResultViewController(result: result)
                 } else {
-                    
+
                 }
             }
         } else {

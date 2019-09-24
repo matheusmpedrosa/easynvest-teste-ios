@@ -20,9 +20,13 @@ class InvestmentFormViewController: UIViewController {
 
 extension InvestmentFormViewController: InvestmentFormViewProtocol {
     func presentResultViewController(result: Investment) {
-        let sb = UIStoryboard.init(name: "Main", bundle: Bundle.main)
-        let vc = sb.instantiateViewController(withIdentifier: "InvestmentResultViewController")
-        show(vc, sender: nil)
-//        present(vc, animated: true, completion: nil)
+        DispatchQueue.main.async {
+            let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+            let investmentResultViewController = storyboard.instantiateViewController(withIdentifier: "InvestmentResultViewController") as? InvestmentResultViewController
+            if let viewController = investmentResultViewController {
+                viewController.result = result
+                self.present(viewController, animated: true, completion: nil)
+            }
+        }
     }
 }
