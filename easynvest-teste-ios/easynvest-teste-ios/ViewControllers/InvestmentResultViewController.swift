@@ -16,3 +16,5 @@ class InvestmentResultViewController: UIViewController {
         super.viewDidLoad()
     }
 }
+
+

@@ -268,7 +268,7 @@
                                     <outlet property="investmentResultValueLabel" destination="6sw-Nz-EWq" id="1Yw-lb-XkV"/>
                                     <outlet property="profitabilityLabel" destination="2nB-c2-XiK" id="iR9-qb-FKp"/>
                                     <outlet property="profitabilityValueLabel" destination="Ggf-ps-OUA" id="6R8-S9-Etx"/>
-                                    <outlet property="tableView" destination="HlT-OA-Ho3" id="xoI-fg-8hL"/>
+                                    <outlet property="tableView" destination="HlT-OA-Ho3" id="76t-OE-1Fu"/>
                                 </connections>
                             </view>
                         </subviews>

@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol InvestmentFormViewProtocol {
+    func presentResultViewController(result: Investment)
+}
+
 class InvestmentFormView: UIView {
 
     @IBOutlet weak var investedAmountLabel: UILabel!
@@ -36,6 +40,7 @@ class InvestmentFormView: UIView {
     }
     
     var investmentFormViewModel = InvestmentFormViewModel()
+    var delegate: InvestmentFormViewProtocol?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -60,14 +65,13 @@ class InvestmentFormView: UIView {
             
             APIInvestmentRepository.getInvestiment(params: params) { (result) in
                 if let result = result {
-                    print("🏳️‍🌈 SUCCESS!!! \n \(result)")
+                    self.delegate?.presentResultViewController(result: result)
                 } else {
-                    //show alert for request error
+                    
                 }
             }
         } else {
-            //show alert to fill textfields
-            print("🏳️‍🌈 show alert to fill textfields")
+            
         }
     }
     
