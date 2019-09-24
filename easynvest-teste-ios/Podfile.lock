@@ -1,0 +1,24 @@
+PODS:
+  - IQKeyboardManager (6.4.0)
+  - Nimble (8.0.2)
+  - Quick (2.1.0)
+
+DEPENDENCIES:
+  - IQKeyboardManager
+  - Nimble
+  - Quick
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - IQKeyboardManager
+    - Nimble
+    - Quick
+
+SPEC CHECKSUMS:
+  IQKeyboardManager: fcef267266379c003181fc3592f6bdb8bf4db839
+  Nimble: 622629381bda1dd5678162f21f1368cec7cbba60
+  Quick: 4be43f6634acfa727dd106bdf3929ce125ffa79d
+
+PODFILE CHECKSUM: e98dcccf788bbda22b332295d65a8c7178ac7a26
+
+COCOAPODS: 1.5.3
