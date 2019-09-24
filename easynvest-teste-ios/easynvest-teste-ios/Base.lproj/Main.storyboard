@@ -142,7 +142,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6nF-tV-cZl">
-                                        <rect key="frame" x="16" y="812" width="382" height="50"/>
+                                        <rect key="frame" x="16" y="796" width="382" height="50"/>
                                         <color key="backgroundColor" name="clr-easynvest-gray"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="HXy-DS-Mtv"/>
@@ -182,7 +182,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6nF-tV-cZl" firstAttribute="bottom" secondItem="1im-sU-u9F" secondAttribute="bottom" id="2Ab-4n-Vcq"/>
+                            <constraint firstItem="1im-sU-u9F" firstAttribute="bottom" secondItem="6nF-tV-cZl" secondAttribute="bottom" constant="16" id="2Ab-4n-Vcq"/>
                             <constraint firstItem="vsm-ap-DJ2" firstAttribute="leading" secondItem="1im-sU-u9F" secondAttribute="leading" id="9B1-wH-CuA"/>
                             <constraint firstAttribute="bottom" secondItem="vsm-ap-DJ2" secondAttribute="bottom" id="CAM-as-7id"/>
                             <constraint firstItem="vsm-ap-DJ2" firstAttribute="top" secondItem="70Z-6b-hNR" secondAttribute="top" id="DZK-Ol-rso"/>
@@ -242,7 +242,7 @@
                                         </subviews>
                                     </stackView>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="HlT-OA-Ho3">
-                                        <rect key="frame" x="0.0" y="188.5" width="414" height="707.5"/>
+                                        <rect key="frame" x="0.0" y="188.5" width="414" height="657.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="rightDetailCell" textLabel="u4B-nR-SlX" detailTextLabel="nx0-gP-jVj" style="IBUITableViewCellStyleValue1" id="wd1-CI-MAz" customClass="RightDetailTableViewCell" customModule="easynvest_teste_ios" customModuleProvider="target">
@@ -275,7 +275,6 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="6sw-Nz-EWq" firstAttribute="centerX" secondItem="Yuw-C2-5ZY" secondAttribute="centerX" id="9hX-wS-D5b"/>
-                                    <constraint firstAttribute="bottom" secondItem="HlT-OA-Ho3" secondAttribute="bottom" id="Ei1-LY-ziZ"/>
                                     <constraint firstItem="HlT-OA-Ho3" firstAttribute="leading" secondItem="Yuw-C2-5ZY" secondAttribute="leading" id="G9l-uY-0Dq"/>
                                     <constraint firstItem="Sdb-lU-0fa" firstAttribute="centerX" secondItem="Yuw-C2-5ZY" secondAttribute="centerX" id="N78-5k-3ya"/>
                                     <constraint firstItem="6sw-Nz-EWq" firstAttribute="top" secondItem="6rq-hy-L0G" secondAttribute="bottom" constant="15" id="d0N-bK-KNI"/>
@@ -296,6 +295,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6rq-hy-L0G" firstAttribute="top" secondItem="25A-hT-itK" secondAttribute="top" constant="16" id="CXQ-fY-f5T"/>
+                            <constraint firstItem="25A-hT-itK" firstAttribute="bottom" secondItem="HlT-OA-Ho3" secondAttribute="bottom" constant="16" id="CgV-ej-kh0"/>
                             <constraint firstItem="Yuw-C2-5ZY" firstAttribute="leading" secondItem="25A-hT-itK" secondAttribute="leading" id="Gm6-bb-NVJ"/>
                             <constraint firstItem="Yuw-C2-5ZY" firstAttribute="top" secondItem="SOl-sb-idp" secondAttribute="top" id="Pqa-bp-M6a"/>
                             <constraint firstItem="25A-hT-itK" firstAttribute="trailing" secondItem="Yuw-C2-5ZY" secondAttribute="trailing" id="cJu-l7-Fcb"/>
