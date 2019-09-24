@@ -26,13 +26,25 @@ class InvestmentFormView: UIView {
     @IBOutlet weak var investmentCDIRateTextField: UITextField! {
         didSet {
             investmentCDIRateTextField.delegate = self
+            investmentCDIRateTextField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: UIControl.Event.editingChanged)
         }
     }
     @IBOutlet weak var simulateButton: UIButton! {
         didSet {
-            simulateButton.isEnabled = false
+            simulateButton.backgroundColor = #colorLiteral(red: 0.7647058824, green: 0.7921568627, blue: 0.7882352941, alpha: 1)
         }
     }
+    
+    var investmentFormViewModel = InvestmentFormViewModel()
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
     
     @IBAction func simulateButtonClicked(_ sender: UIButton) {
         if allTextFieldsFilled() {
@@ -40,10 +52,11 @@ class InvestmentFormView: UIView {
             guard let rate = investmentCDIRateTextField.text else { return }
             guard let maturityDate = maturityDateTextField.text else { return }
             
-            let investmentFormViewModel = InvestmentFormViewModel(investedAmount: investedAmount,
-                                                                  rate: rate,
-                                                                  maturityDate: dateMask(from: maturityDate))
-            let params = investmentFormViewModel.params
+            let requestParams = Request(investedAmount: investedAmount,
+                                        rate: rate,
+                                        maturityDate: investmentFormViewModel.dateMask(from: maturityDate))
+            
+            let params = requestParams.params
             
             APIInvestmentRepository.getInvestiment(params: params) { (result) in
                 if let result = result {
@@ -54,16 +67,10 @@ class InvestmentFormView: UIView {
             }
         } else {
             //show alert to fill textfields
+            print("🏳️‍🌈 show alert to fill textfields")
         }
     }
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
 }
 
 extension InvestmentFormView: UITextFieldDelegate {
@@ -84,44 +91,23 @@ extension InvestmentFormView: UITextFieldDelegate {
         }
         return true
     }
-    
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        if allTextFieldsFilled() {
-            simulateButton.isEnabled = true
-        } else {
-            simulateButton.isEnabled = false
-        }
-    }
 }
 
 extension InvestmentFormView {
-    func allTextFieldsFilled() -> Bool {
-        if investedAmountTextField.hasText && investmentCDIRateTextField.hasText && investmentCDIRateTextField.hasText {
+    @objc func textFieldDidChange(_ textField: UITextField) {
+        if investedAmountTextField.hasText && maturityDateTextField.hasText {
+            if textField.text != "" {
+                simulateButton.backgroundColor = #colorLiteral(red: 0.09019607843, green: 0.7843137255, blue: 0.7019607843, alpha: 1)
+            } else {
+                simulateButton.backgroundColor = #colorLiteral(red: 0.7647058824, green: 0.7921568627, blue: 0.7882352941, alpha: 1)
+            }
+        }
+    }
+    
+    fileprivate func allTextFieldsFilled() -> Bool {
+        if investedAmountTextField.hasText && maturityDateTextField.hasText && investmentCDIRateTextField.hasText {
             return true
         }
         return false
-    }
-    
-    func dateMask(from string: String) -> String {
-        let dateFromString = stringToDate(from: string)
-        let stringFromDate = dateToString(from: dateFromString)
-        return stringFromDate
-    }
-    
-    func stringToDate(from string: String) -> Date {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd/MM/yyyy"
-        dateFormatter.locale = Locale(identifier: "pt_BR")
-        if let date = dateFormatter.date(from:string) {
-            return date
-        }
-        return Date()
-    }
-    
-    func dateToString(from date: Date) -> String{
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd"
-        let string = dateFormatter.string(from: date)
-        return string
     }
 }

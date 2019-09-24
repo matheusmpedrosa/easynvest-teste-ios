@@ -7,34 +7,29 @@
 //
 
 import Foundation
-
-enum RequestParams: String {
-    case investedAmount
-    case index
-    case rate
-    case isTaxFree
-    case maturityDate
-}
+import UIKit
 
 class InvestmentFormViewModel {
-    var investedAmount: String = ""
-    var index: String = "CDI"
-    var rate: String = ""
-    var isTaxFree: Bool = false
-    var maturityDate: String = ""
-    var params: [String: Any] {
-        return [
-            RequestParams.investedAmount.rawValue: investedAmount,
-            RequestParams.index.rawValue: index,
-            RequestParams.rate.rawValue: rate,
-            RequestParams.isTaxFree.rawValue: isTaxFree,
-            RequestParams.maturityDate.rawValue: maturityDate
-        ]
+    func dateMask(from string: String) -> String {
+        let dateFromString = stringToDate(from: string) //Date as "dd/MM/yyyy"
+        let stringFromDate = dateToString(from: dateFromString) //Date as "yyyy-MM-dd"
+        return stringFromDate
     }
     
-    init(investedAmount: String, rate: String, maturityDate: String) {
-        self.investedAmount = investedAmount
-        self.rate = rate
-        self.maturityDate = maturityDate
+    func stringToDate(from string: String) -> Date {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd/MM/yyyy"
+        dateFormatter.locale = Locale(identifier: "pt_BR")
+        if let date = dateFormatter.date(from:string) {
+            return date
+        }
+        return Date()
+    }
+    
+    func dateToString(from date: Date) -> String{
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        let string = dateFormatter.string(from: date)
+        return string
     }
 }

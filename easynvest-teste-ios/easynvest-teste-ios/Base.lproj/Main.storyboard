@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -147,13 +148,18 @@
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6nF-tV-cZl">
                                         <rect key="frame" x="16" y="812" width="382" height="50"/>
-                                        <color key="backgroundColor" red="0.93333333330000001" green="0.28235294119999998" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="clr-easynvest-gray"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="HXy-DS-Mtv"/>
                                         </constraints>
                                         <state key="normal" title="Simular">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="simulateButtonClicked:" destination="vsm-ap-DJ2" eventType="touchUpInside" id="rLa-xL-PVq"/>
                                         </connections>
@@ -285,4 +291,9 @@
             <point key="canvasLocation" x="696" y="96"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="clr-easynvest-gray">
+            <color red="0.76470588235294112" green="0.792156862745098" blue="0.78823529411764703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
