@@ -65,6 +65,8 @@ class InvestmentResultViewModel {
             cell.textLabel?.text = "Valor líquido do investimento"
             cell.detailTextLabel?.text = toBrazilianReal(double: result.netAmount)
         case 5:
+            cell.isAccessibilityElement = false
+            cell.contentView.isAccessibilityElement = false
             cell.textLabel?.text = ""
             cell.detailTextLabel?.text = ""
         case 6:

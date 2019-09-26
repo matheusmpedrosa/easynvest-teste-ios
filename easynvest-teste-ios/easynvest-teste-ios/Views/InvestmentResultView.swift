@@ -14,10 +14,32 @@ protocol InvestmentResultViewProtocol: class {
 
 class InvestmentResultView: UIView {
 
-    @IBOutlet weak var investmentResultLabel: UILabel!
-    @IBOutlet weak var investmentResultValueLabel: UILabel!
-    @IBOutlet weak var profitabilityLabel: UILabel!
-    @IBOutlet weak var profitabilityValueLabel: UILabel!
+    @IBOutlet weak var investmentResultLabel: UILabel! {
+        didSet {
+            investmentResultLabel.isAccessibilityElement = true
+            investmentResultLabel.accessibilityLabel = "Resultado da simulação"
+            investmentResultLabel.accessibilityTraits = .staticText
+        }
+    }
+    @IBOutlet weak var investmentResultValueLabel: UILabel! {
+           didSet {
+               investmentResultLabel.isAccessibilityElement = true
+               investmentResultLabel.accessibilityTraits = .staticText
+           }
+       }
+    @IBOutlet weak var profitabilityLabel: UILabel! {
+           didSet {
+               profitabilityLabel.isAccessibilityElement = true
+               profitabilityLabel.accessibilityLabel = "Rendimento total de "
+               profitabilityLabel.accessibilityTraits = .staticText
+           }
+       }
+    @IBOutlet weak var profitabilityValueLabel: UILabel! {
+        didSet {
+            profitabilityValueLabel.isAccessibilityElement = true
+            profitabilityValueLabel.accessibilityTraits = .staticText
+        }
+    }
     @IBOutlet weak var tableView: UITableView! {
         didSet {
             tableView.dataSource = self
@@ -78,7 +100,10 @@ extension InvestmentResultView: InvestmentResultViewControllerProtocol {
     func InvestmentResultViewDidLayoutSubviews() {
         if let result = investmentResult {
             investmentResultValueLabel.text = investmentResultViewModel.toBrazilianReal(double: result.grossAmount)
+            investmentResultValueLabel.accessibilityLabel = investmentResultViewModel.toBrazilianReal(double: result.grossAmount)
+            
             profitabilityValueLabel.text = investmentResultViewModel.toBrazilianReal(double: result.grossAmountProfit)
+            profitabilityValueLabel.accessibilityLabel = investmentResultViewModel.toBrazilianReal(double: result.grossAmountProfit)
         }
     }
 }

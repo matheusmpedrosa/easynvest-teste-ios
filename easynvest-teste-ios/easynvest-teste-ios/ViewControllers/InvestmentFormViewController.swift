@@ -30,4 +30,19 @@ extension InvestmentFormViewController: InvestmentFormViewProtocol {
             }
         }
     }
+    
+    func showAlertForEmptyTextFields() {
+        self.presentAlertWithOptions(title: "Calma, jovem!", message: "Antes de simular o investimento, preencha corretamente todo o formulário.", style: .alert, options: "Tô calmo") { (option) in
+        }
+    }
+    
+    func showAlertForRequestErorr() {
+        self.presentAlertWithOptions(title: "Ops...", message: "Algo deu errado na simulação. Tente novamente.", style: .alert, options: "Tudo bem") { (option) in
+        }
+    }
+    
+    func showAlertForWrongDateFormat() {
+        self.presentAlertWithOptions(title: "Ops...", message: "Parece que a data inserida está incorreta. De preferência, escreva no formato \"dd/MM/yyyy\".", style: .alert, options: "Vou arrumar") { (option) in
+        }
+    }
 }

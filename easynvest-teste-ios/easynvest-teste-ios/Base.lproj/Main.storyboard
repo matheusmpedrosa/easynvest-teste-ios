@@ -39,13 +39,13 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gwD-DY-q34">
                                                         <rect key="frame" x="0.0" y="35" width="382" height="46"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="R$" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3iE-OD-7es">
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="R$" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="3iE-OD-7es">
                                                                 <rect key="frame" x="0.0" y="0.0" width="382" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="40" id="zr0-lk-WyS"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                                <textInputTraits key="textInputTraits"/>
+                                                                <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="decimalPad" returnKeyType="next"/>
                                                             </textField>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N3R-iu-6ak">
                                                                 <rect key="frame" x="0.0" y="45" width="382" height="1"/>
@@ -77,13 +77,13 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="TB2-7D-RB5">
                                                         <rect key="frame" x="0.0" y="35" width="382" height="46"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="dia/mês/ano" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LGY-l8-4wS">
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="dia/mês/ano" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="LGY-l8-4wS">
                                                                 <rect key="frame" x="0.0" y="0.0" width="382" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="40" id="pej-e7-tXg"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                                <textInputTraits key="textInputTraits"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="next"/>
                                                             </textField>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mwi-wq-uZb">
                                                                 <rect key="frame" x="0.0" y="45" width="382" height="1"/>
@@ -116,13 +116,13 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="OV1-Ye-fzT">
                                                         <rect key="frame" x="0.0" y="35" width="382" height="46"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="100%" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fE8-x8-kdA">
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="100%" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="fE8-x8-kdA">
                                                                 <rect key="frame" x="0.0" y="0.0" width="382" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="40" id="fYp-fb-r7Q"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                                <textInputTraits key="textInputTraits"/>
+                                                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="decimalPad" returnKeyType="go"/>
                                                             </textField>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h4E-3b-uaA">
                                                                 <rect key="frame" x="0.0" y="45" width="382" height="1"/>

@@ -15,6 +15,13 @@ protocol SimulateAgainViewProtocol: class {
 class SimulateAgainView: UIView {
 
     @IBOutlet var contentView: UIView!
+    @IBOutlet weak var simulateButton: UIButton! {
+        didSet {
+            simulateButton.isAccessibilityElement = true
+            simulateButton.accessibilityLabel = "Simular novamente"
+            simulateButton.accessibilityTraits = .button
+        }
+    }
     weak var delegate: SimulateAgainViewProtocol?
     
     required init(frame: CGRect, delegate: SimulateAgainViewProtocol) {

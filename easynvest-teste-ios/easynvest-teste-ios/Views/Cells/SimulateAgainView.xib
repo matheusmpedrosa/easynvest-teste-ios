@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SimulateAgainView" customModule="easynvest_teste_ios" customModuleProvider="target">
             <connections>
                 <outlet property="contentView" destination="zKI-4f-FxM" id="8Y2-oP-Wzg"/>
+                <outlet property="simulateButton" destination="YYG-uj-ffP" id="dku-H8-5Mk"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

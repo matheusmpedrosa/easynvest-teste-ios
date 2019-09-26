@@ -21,6 +21,7 @@ class APIInvestmentRepository {
             if let data = data {
                 completion(self.createInvestment(from: data))
             } else {
+                print("Response: \(String(describing: response))")
                 print("Error: \(String(describing: error))")
                 completion(nil)
             }
