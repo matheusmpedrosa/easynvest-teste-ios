@@ -50,19 +50,19 @@ class InvestmentResultViewModel {
     func manageTableViewCells(cell: UITableViewCell, indexPath: IndexPath, result: Investment) {
         switch indexPath.row {
         case 0:
-            cell.textLabel?.text = "Valor aplicado inicialmente"
+            cell.textLabel?.text = Labels.kInvestedAmount
             cell.detailTextLabel?.text = toBrazilianReal(double: result.investmentParameter.investedAmount)
         case 1:
-            cell.textLabel?.text = "Valor bruto do investimento"
+            cell.textLabel?.text = Labels.kGrossAmount
             cell.detailTextLabel?.text = toBrazilianReal(double: result.grossAmount)
         case 2:
-            cell.textLabel?.text = "Valor do rendimento"
+            cell.textLabel?.text = Labels.kGrossAmountProfit
             cell.detailTextLabel?.text = toBrazilianReal(double: result.grossAmountProfit)
         case 3:
-            cell.textLabel?.text = "IR sobre o investimento"
+            cell.textLabel?.text = Labels.kTaxesAmount
             cell.detailTextLabel?.text = taxesAmountAndRate(with: result.taxesAmount, rate: result.taxesRate)
         case 4:
-            cell.textLabel?.text = "Valor líquido do investimento"
+            cell.textLabel?.text = Labels.kNetAmount
             cell.detailTextLabel?.text = toBrazilianReal(double: result.netAmount)
         case 5:
             cell.isAccessibilityElement = false
@@ -70,22 +70,22 @@ class InvestmentResultViewModel {
             cell.textLabel?.text = ""
             cell.detailTextLabel?.text = ""
         case 6:
-            cell.textLabel?.text = "Data de resgate"
+            cell.textLabel?.text = Labels.kMaturityDate
             cell.detailTextLabel?.text = convertDate(from: result.investmentParameter.maturityDate)
         case 7:
-            cell.textLabel?.text = "Dias corridos"
+            cell.textLabel?.text = Labels.kMaturityTotalDays
             cell.detailTextLabel?.text = result.investmentParameter.maturityTotalDays.description
         case 8:
-            cell.textLabel?.text = "Rendimento mensal"
+            cell.textLabel?.text = Labels.kMonthlyGrossRateProfit
             cell.detailTextLabel?.text = withRateCharacter(double: result.monthlyGrossRateProfit)
         case 9:
-            cell.textLabel?.text = "Percentual do CDI do investimento"
+            cell.textLabel?.text = Labels.kRate
             cell.detailTextLabel?.text = withRateCharacter(double: result.investmentParameter.rate)
         case 10:
-            cell.textLabel?.text = "Rentabilidade anual"
+            cell.textLabel?.text = Labels.kAnnualNetRateProfit
             cell.detailTextLabel?.text = withRateCharacter(double: result.annualNetRateProfit)
         case 11:
-            cell.textLabel?.text = "Rentabilidade no período"
+            cell.textLabel?.text = Labels.kAnnualGrossRateProfit
             cell.detailTextLabel?.text = withRateCharacter(double: result.annualGrossRateProfit)
         default:
             break

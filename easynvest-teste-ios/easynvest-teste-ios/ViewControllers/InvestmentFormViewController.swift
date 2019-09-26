@@ -22,7 +22,7 @@ extension InvestmentFormViewController: InvestmentFormViewProtocol {
     func presentResultViewController(result: Investment) {
         DispatchQueue.main.async {
             let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-            let investmentResultViewController = storyboard.instantiateViewController(withIdentifier: ViewController.resultViewController) as? InvestmentResultViewController
+            let investmentResultViewController = storyboard.instantiateViewController(withIdentifier: ViewControllers.kResultViewController) as? InvestmentResultViewController
             if let viewController = investmentResultViewController {
                 viewController.result = result
                 self.present(viewController, animated: true, completion: nil)
@@ -31,17 +31,17 @@ extension InvestmentFormViewController: InvestmentFormViewProtocol {
     }
 
     func showAlertForEmptyTextFields() {
-        self.presentAlertWithOptions(title: Alert.kWaitTitle, message: Alert.kWaitDescription, style: .alert, options: Alert.kWaitOption) { (_) in
+        self.presentAlertWithOptions(title: Alerts.kWaitTitle, message: Alerts.kWaitDescription, style: .alert, options: Alerts.kWaitOption) { (_) in
         }
     }
 
     func showAlertForRequestErorr() {
-        self.presentAlertWithOptions(title: Alert.kResquestTitle, message: Alert.kResquestDescription, style: .alert, options: Alert.kResquestOption) { (_) in
+        self.presentAlertWithOptions(title: Alerts.kResquestTitle, message: Alerts.kResquestDescription, style: .alert, options: Alerts.kResquestOption) { (_) in
         }
     }
 
     func showAlertForWrongDateFormat() {
-        self.presentAlertWithOptions(title: Alert.kDateTitle, message: Alert.kDateDescription, style: .alert, options: Alert.kDateOption) { (_) in
+        self.presentAlertWithOptions(title: Alerts.kDateTitle, message: Alerts.kDateDescription, style: .alert, options: Alerts.kDateOption) { (_) in
         }
     }
 }

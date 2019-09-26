@@ -17,7 +17,7 @@ class SimulateAgainView: UIView {
     @IBOutlet weak var simulateButton: UIButton! {
         didSet {
             simulateButton.isAccessibilityElement = true
-            simulateButton.accessibilityLabel = "Simular novamente"
+            simulateButton.accessibilityLabel = Labels.kSimulateAgainButton
             simulateButton.accessibilityTraits = .button
         }
     }
@@ -40,7 +40,7 @@ class SimulateAgainView: UIView {
 
 extension SimulateAgainView {
     func setup() {
-        Bundle.main.loadNibNamed("SimulateAgainView", owner: self, options: nil)
+        Bundle.main.loadNibNamed(Views.kSimulateAgainView, owner: self, options: nil)
         contentView.frame = bounds
         self.addSubview(contentView)
     }

@@ -19,48 +19,45 @@ class InvestmentFormView: UIView {
     @IBOutlet weak var investedAmountLabel: UILabel! {
         didSet {
             investedAmountLabel.isAccessibilityElement = true
-            investedAmountLabel.accessibilityLabel = "Quanto você gostaria de aplicar? *"
+            investedAmountLabel.accessibilityLabel = Labels.kInvestedAmountLabel
             investedAmountLabel.accessibilityTraits = .staticText
         }
     }
     @IBOutlet weak var investedAmountTextField: UITextField! {
         didSet {
-            investedAmountTextField.text = "1024"
             investedAmountTextField.delegate = self
             investedAmountTextField.isAccessibilityElement = true
-            investedAmountTextField.accessibilityLabel = "Campo de texto para o quanto você gostaria de aplicar."
+            investedAmountTextField.accessibilityLabel = Labels.kInvestedAmountTextField
             investedAmountTextField.accessibilityTraits = .searchField
         }
     }
     @IBOutlet weak var maturityDateLabel: UILabel! {
         didSet {
             maturityDateLabel.isAccessibilityElement = true
-            maturityDateLabel.accessibilityLabel = "Qual a data de vencimento do investimento? *"
+            maturityDateLabel.accessibilityLabel = Labels.kMaturityDateLabel
             maturityDateLabel.accessibilityTraits = .staticText
         }
     }
     @IBOutlet weak var maturityDateTextField: UITextField! {
         didSet {
-            maturityDateTextField.text = "14/06/2024"
             maturityDateTextField.delegate = self
             maturityDateTextField.isAccessibilityElement = true
-            maturityDateTextField.accessibilityLabel = "Campo de texto para a data de vencimento do investimento."
+            maturityDateTextField.accessibilityLabel = Labels.kMaturityDateTextField
             maturityDateTextField.accessibilityTraits = .searchField
         }
     }
     @IBOutlet weak var investmentCDIRateLabel: UILabel! {
         didSet {
             investmentCDIRateLabel.isAccessibilityElement = true
-            investmentCDIRateLabel.accessibilityLabel = "Qual o percentual do CDI do investimento? *"
+            investmentCDIRateLabel.accessibilityLabel = Labels.kInvestmentCDIRateLabel
             investmentCDIRateLabel.accessibilityTraits = .staticText
         }
     }
     @IBOutlet weak var investmentCDIRateTextField: UITextField! {
         didSet {
-            investmentCDIRateTextField.text = "120"
             investmentCDIRateTextField.delegate = self
             investmentCDIRateTextField.isAccessibilityElement = true
-            investmentCDIRateTextField.accessibilityLabel = "Campo de texto para o percentual do CDI do investimento."
+            investmentCDIRateTextField.accessibilityLabel = Labels.kInvestmentCDIRateTextField
             investmentCDIRateTextField.accessibilityTraits = .searchField
             investmentCDIRateTextField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: UIControl.Event.editingChanged)
         }
@@ -69,7 +66,7 @@ class InvestmentFormView: UIView {
         didSet {
             simulateButton.backgroundColor = #colorLiteral(red: 0.7647058824, green: 0.7921568627, blue: 0.7882352941, alpha: 1)
             simulateButton.isAccessibilityElement = true
-            simulateButton.accessibilityLabel = "Simular"
+            simulateButton.accessibilityLabel = Labels.kSimulateButton
             simulateButton.accessibilityTraits = .button
         }
     }

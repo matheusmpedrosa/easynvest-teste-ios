@@ -31,7 +31,7 @@ class APIInvestmentRepository {
     }
 
     class private func createRequest(with params: [String: Any]) -> URLRequest {
-        let urlString = "https://api-simulator-calc.easynvest.com.br/calculator/simulate"
+        let urlString = API.url
         let urlComponents = URLComponents(string: urlString)
         var items = [URLQueryItem]()
 

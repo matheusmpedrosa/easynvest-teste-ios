@@ -80,7 +80,7 @@ class InvestmentFormViewModel {
 
     func hideLoading(on button: UIButton) {
         DispatchQueue.main.async(execute: {
-            button.setTitle("Simular", for: .normal)
+            button.setTitle(Labels.kSimulateButton, for: .normal)
             self.activityIndicator.stopAnimating()
         })
     }

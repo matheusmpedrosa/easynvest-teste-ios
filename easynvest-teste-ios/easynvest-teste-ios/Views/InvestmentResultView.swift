@@ -16,7 +16,7 @@ class InvestmentResultView: UIView {
     @IBOutlet weak var investmentResultLabel: UILabel! {
         didSet {
             investmentResultLabel.isAccessibilityElement = true
-            investmentResultLabel.accessibilityLabel = "Resultado da simulação"
+            investmentResultLabel.accessibilityLabel = Labels.kInvestmentResultLabel
             investmentResultLabel.accessibilityTraits = .staticText
         }
     }
@@ -29,7 +29,7 @@ class InvestmentResultView: UIView {
     @IBOutlet weak var profitabilityLabel: UILabel! {
            didSet {
                profitabilityLabel.isAccessibilityElement = true
-               profitabilityLabel.accessibilityLabel = "Rendimento total de "
+            profitabilityLabel.accessibilityLabel = Labels.kProfitabilityLabel
                profitabilityLabel.accessibilityTraits = .staticText
            }
        }
@@ -80,7 +80,7 @@ extension InvestmentResultView: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "rightDetailCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifiers.kRightDetail, for: indexPath)
         cell.selectionStyle = .none
 
         if let result = investmentResult {

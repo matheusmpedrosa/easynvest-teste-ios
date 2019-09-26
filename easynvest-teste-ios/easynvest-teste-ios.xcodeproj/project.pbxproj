@@ -137,6 +137,7 @@
 				80BE5D912336CF47009B90C7 /* Assets.xcassets */,
 				80BE5D932336CF47009B90C7 /* LaunchScreen.storyboard */,
 				80BE5D962336CF47009B90C7 /* Info.plist */,
+				80C898FE233C5042003958AC /* Contants.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -209,7 +210,6 @@
 		80D925E5233A8EA500929952 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				80C898FE233C5042003958AC /* Contants.swift */,
 				80D925E6233A8EC100929952 /* UIViewControllerUtils.swift */,
 			);
 			path = Utils;
