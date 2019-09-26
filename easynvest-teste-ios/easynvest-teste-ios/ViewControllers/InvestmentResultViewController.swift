@@ -9,11 +9,10 @@
 import UIKit
 
 protocol InvestmentResultViewControllerProtocol: class {
-    func InvestmentResultViewDidLayoutSubviews()
+    func investmentResultViewDidLayoutSubviews()
 }
 
 class InvestmentResultViewController: UIViewController {
-    
     @IBOutlet weak var mainView: InvestmentResultView! {
         didSet {
             if let view = mainView, let result = result {
@@ -24,15 +23,15 @@ class InvestmentResultViewController: UIViewController {
     }
     var result: Investment?
     weak var delegate: InvestmentResultViewControllerProtocol?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         mainView.delegate = self
     }
-    
+
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        delegate?.InvestmentResultViewDidLayoutSubviews()
+        delegate?.investmentResultViewDidLayoutSubviews()
     }
 }
 
@@ -41,5 +40,3 @@ extension InvestmentResultViewController: InvestmentResultViewProtocol {
         self.dismiss(animated: true, completion: nil)
     }
 }
-
-

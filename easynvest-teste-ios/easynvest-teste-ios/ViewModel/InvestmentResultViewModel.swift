@@ -20,33 +20,33 @@ class InvestmentResultViewModel {
         }
         return ""
     }
-    
+
     func withRateCharacter(double: Double) -> String {
         return "\(double)%"
     }
-    
+
     func taxesAmountAndRate(with amount: Double, rate: Double) -> String {
         return "(\(self.withRateCharacter(double: amount)))\(self.withRateCharacter(double: rate))"
     }
-    
+
 //    yyyy-MM-dd'T'HH:mm:ssZ
     func convertDate(from string: String) -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
 //        dateFormatter.locale = Locale(identifier: "pt_BR")
-        if let date = dateFormatter.date(from:string) {
+        if let date = dateFormatter.date(from: string) {
             return self.dateToString(from: date)
         }
         return ""
     }
-    
-    func dateToString(from date: Date) -> String{
+
+    func dateToString(from date: Date) -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd/MM/yyyy"
         let string = dateFormatter.string(from: date)
         return string
     }
-    
+
     func manageTableViewCells(cell: UITableViewCell, indexPath: IndexPath, result: Investment) {
         switch indexPath.row {
         case 0:

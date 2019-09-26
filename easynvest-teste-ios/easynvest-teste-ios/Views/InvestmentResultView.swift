@@ -13,7 +13,6 @@ protocol InvestmentResultViewProtocol: class {
 }
 
 class InvestmentResultView: UIView {
-
     @IBOutlet weak var investmentResultLabel: UILabel! {
         didSet {
             investmentResultLabel.isAccessibilityElement = true
@@ -48,11 +47,7 @@ class InvestmentResultView: UIView {
             setupTableViewFooterView()
         }
     }
-    var investmentResult: Investment? {
-        didSet {
-            
-        }
-    }
+    var investmentResult: Investment?
     var investmentResultViewController: InvestmentResultViewController? {
         didSet {
             investmentResultViewController?.delegate = self
@@ -61,11 +56,11 @@ class InvestmentResultView: UIView {
     let investmentResultViewModel = InvestmentResultViewModel()
     var simulateAgainView: SimulateAgainView?
     weak var delegate: InvestmentResultViewProtocol?
-    
+
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
@@ -83,25 +78,25 @@ extension InvestmentResultView: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 12
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "rightDetailCell", for: indexPath)
         cell.selectionStyle = .none
-        
+
         if let result = investmentResult {
             investmentResultViewModel.manageTableViewCells(cell: cell, indexPath: indexPath, result: result)
         }
-        
+
         return cell
     }
 }
 
 extension InvestmentResultView: InvestmentResultViewControllerProtocol {
-    func InvestmentResultViewDidLayoutSubviews() {
+    func investmentResultViewDidLayoutSubviews() {
         if let result = investmentResult {
             investmentResultValueLabel.text = investmentResultViewModel.toBrazilianReal(double: result.grossAmount)
             investmentResultValueLabel.accessibilityLabel = investmentResultViewModel.toBrazilianReal(double: result.grossAmount)
-            
+
             profitabilityValueLabel.text = investmentResultViewModel.toBrazilianReal(double: result.grossAmountProfit)
             profitabilityValueLabel.accessibilityLabel = investmentResultViewModel.toBrazilianReal(double: result.grossAmountProfit)
         }

@@ -13,7 +13,6 @@ protocol SimulateAgainViewProtocol: class {
 }
 
 class SimulateAgainView: UIView {
-
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var simulateButton: UIButton! {
         didSet {
@@ -23,17 +22,17 @@ class SimulateAgainView: UIView {
         }
     }
     weak var delegate: SimulateAgainViewProtocol?
-    
+
     required init(frame: CGRect, delegate: SimulateAgainViewProtocol) {
         super.init(frame: frame)
         self.delegate = delegate
         setup()
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     @IBAction func simulateAgainButtonTouched(_ sender: Any) {
         delegate?.dismissInvestmentResultViewController()
     }
@@ -44,6 +43,5 @@ extension SimulateAgainView {
         Bundle.main.loadNibNamed("SimulateAgainView", owner: self, options: nil)
         contentView.frame = bounds
         self.addSubview(contentView)
-        
     }
 }

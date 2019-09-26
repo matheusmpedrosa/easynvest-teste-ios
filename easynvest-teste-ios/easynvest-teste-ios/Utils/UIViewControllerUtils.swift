@@ -15,25 +15,25 @@ extension UIViewController {
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
     }
-    
-    @objc func dismissKeyboard() {
+
+    @objc
+    func dismissKeyboard() {
         view.endEditing(true)
     }
-    
+
     func presentAlertWithOptions(title: String?, message: String?, style: UIAlertController.Style, options: String..., completion: @escaping (Int) -> Void) {
-        let alertController =  UIAlertController(title: title, message: message, preferredStyle: style)
-        
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: style)
+
         for (index, option) in options.enumerated() {
-            
-            let action = UIAlertAction(title: option, style: .default, handler: { (action) in
+            let action = UIAlertAction(title: option, style: .default, handler: { (_) in
                 completion(index)
             })
-            
+
             let image = UIImage(named: options[index].lowercased())
             let imageView = UIImageView()
             imageView.image = image
             imageView.frame = CGRect(x: 25, y: 18, width: 24, height: 24)
-            
+
             if options[index] == "Cancelar" {
                 alertController.addAction(UIAlertAction(title: "Cancelar", style: .destructive, handler: nil))
             } else {

@@ -22,7 +22,7 @@ class Request {
     var rate: String = ""
     var isTaxFree: Bool = false
     var maturityDate: String = ""
-    
+
     var params: [String: Any] {
         return [
             RequestParams.investedAmount.rawValue: investedAmount,
@@ -32,7 +32,7 @@ class Request {
             RequestParams.maturityDate.rawValue: maturityDate
         ]
     }
-    
+
     init(investedAmount: String, rate: String, maturityDate: String) {
         self.investedAmount = investedAmount
         self.rate = rate

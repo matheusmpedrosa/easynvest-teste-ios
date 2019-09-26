@@ -9,9 +9,8 @@
 import UIKit
 
 class InvestmentFormViewController: UIViewController {
-    
     @IBOutlet weak var mainView: InvestmentFormView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         mainView.delegate = self
@@ -23,26 +22,26 @@ extension InvestmentFormViewController: InvestmentFormViewProtocol {
     func presentResultViewController(result: Investment) {
         DispatchQueue.main.async {
             let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-            let investmentResultViewController = storyboard.instantiateViewController(withIdentifier: "InvestmentResultViewController") as? InvestmentResultViewController
+            let investmentResultViewController = storyboard.instantiateViewController(withIdentifier: ViewController.resultViewController) as? InvestmentResultViewController
             if let viewController = investmentResultViewController {
                 viewController.result = result
                 self.present(viewController, animated: true, completion: nil)
             }
         }
     }
-    
+
     func showAlertForEmptyTextFields() {
-        self.presentAlertWithOptions(title: "Calma, jovem!", message: "Antes de simular o investimento, preencha corretamente todo o formulário.", style: .alert, options: "Tô calmo") { (option) in
+        self.presentAlertWithOptions(title: Alert.kWaitTitle, message: Alert.kWaitDescription, style: .alert, options: Alert.kWaitOption) { (_) in
         }
     }
-    
+
     func showAlertForRequestErorr() {
-        self.presentAlertWithOptions(title: "Ops...", message: "Algo deu errado na simulação. Tente novamente.", style: .alert, options: "Tudo bem") { (option) in
+        self.presentAlertWithOptions(title: Alert.kResquestTitle, message: Alert.kResquestDescription, style: .alert, options: Alert.kResquestOption) { (_) in
         }
     }
-    
+
     func showAlertForWrongDateFormat() {
-        self.presentAlertWithOptions(title: "Ops...", message: "Parece que a data inserida está incorreta. De preferência, escreva no formato \"dd/MM/yyyy\".", style: .alert, options: "Vou arrumar") { (option) in
+        self.presentAlertWithOptions(title: Alert.kDateTitle, message: Alert.kDateDescription, style: .alert, options: Alert.kDateOption) { (_) in
         }
     }
 }

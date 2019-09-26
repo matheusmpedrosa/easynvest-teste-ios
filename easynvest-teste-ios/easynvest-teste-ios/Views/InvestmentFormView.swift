@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol InvestmentFormViewProtocol {
+protocol InvestmentFormViewProtocol: class {
     func presentResultViewController(result: Investment)
     func showAlertForEmptyTextFields()
     func showAlertForRequestErorr()
@@ -16,7 +16,6 @@ protocol InvestmentFormViewProtocol {
 }
 
 class InvestmentFormView: UIView {
-
     @IBOutlet weak var investedAmountLabel: UILabel! {
         didSet {
             investedAmountLabel.isAccessibilityElement = true
@@ -74,32 +73,32 @@ class InvestmentFormView: UIView {
             simulateButton.accessibilityTraits = .button
         }
     }
-    
+
     var investmentFormViewModel = InvestmentFormViewModel()
-    var delegate: InvestmentFormViewProtocol?
-    
+    weak var delegate: InvestmentFormViewProtocol?
+
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
-    
+
     @IBAction func simulateButtonClicked(_ sender: UIButton) {
         if allTextFieldsFilled() {
             simulateButton.isEnabled = false
             guard let investedAmount = investedAmountTextField.text else { return }
             guard let rate = investmentCDIRateTextField.text else { return }
             guard let maturityDate = maturityDateTextField.text else { return }
-            
+
             if let date = investmentFormViewModel.dateMask(from: maturityDate) {
                 let requestParams = Request(investedAmount: investmentFormViewModel.replaceCommaForDot(at: investedAmount),
                                             rate: investmentFormViewModel.replaceCommaForDot(at: rate),
                                             maturityDate: date)
-                
+
                 let params = requestParams.params
-                
+
                 self.investmentFormViewModel.showLoading(on: self.simulateButton)
                 APIInvestmentRepository.getInvestiment(params: params) { (result) in
                     self.clearTextFields()
@@ -142,7 +141,8 @@ extension InvestmentFormView: UITextFieldDelegate {
 }
 
 extension InvestmentFormView {
-    @objc func textFieldDidChange(_ textField: UITextField) {
+    @objc
+    func textFieldDidChange(_ textField: UITextField) {
         if investedAmountTextField.hasText && maturityDateTextField.hasText {
             if textField.hasText {
                 simulateButton.backgroundColor = #colorLiteral(red: 0.09019607843, green: 0.7843137255, blue: 0.7019607843, alpha: 1)
@@ -151,14 +151,14 @@ extension InvestmentFormView {
             }
         }
     }
-    
+
     fileprivate func allTextFieldsFilled() -> Bool {
         if investedAmountTextField.hasText && maturityDateTextField.hasText && investmentCDIRateTextField.hasText {
             return true
         }
         return false
     }
-    
+
     fileprivate func clearTextFields() {
         DispatchQueue.main.async(execute: {
             self.investedAmountTextField.text = ""
