@@ -9,7 +9,7 @@
 import Foundation
 
 struct API {
-    static url = "https://api-simulator-calc.easynvest.com.br/calculator/simulate"
+    static let url = "https://api-simulator-calc.easynvest.com.br/calculator/simulate"
 }
 
 struct Alerts {
