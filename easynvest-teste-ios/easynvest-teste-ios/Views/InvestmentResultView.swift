@@ -21,18 +21,18 @@ class InvestmentResultView: UIView {
         }
     }
     @IBOutlet weak var investmentResultValueLabel: UILabel! {
-           didSet {
-               investmentResultLabel.isAccessibilityElement = true
-               investmentResultLabel.accessibilityTraits = .staticText
-           }
-       }
+        didSet {
+            investmentResultLabel.isAccessibilityElement = true
+            investmentResultLabel.accessibilityTraits = .staticText
+        }
+    }
     @IBOutlet weak var profitabilityLabel: UILabel! {
-           didSet {
-               profitabilityLabel.isAccessibilityElement = true
+       didSet {
+            profitabilityLabel.isAccessibilityElement = true
             profitabilityLabel.accessibilityLabel = Labels.kProfitabilityLabel
-               profitabilityLabel.accessibilityTraits = .staticText
-           }
+            profitabilityLabel.accessibilityTraits = .staticText
        }
+    }
     @IBOutlet weak var profitabilityValueLabel: UILabel! {
         didSet {
             profitabilityValueLabel.isAccessibilityElement = true
@@ -98,7 +98,7 @@ extension InvestmentResultView: InvestmentResultViewControllerProtocol {
             investmentResultValueLabel.accessibilityLabel = investmentResultViewModel.toBrazilianReal(double: result.grossAmount)
 
             profitabilityValueLabel.text = investmentResultViewModel.toBrazilianReal(double: result.grossAmountProfit)
-            profitabilityValueLabel.accessibilityLabel = investmentResultViewModel.toBrazilianReal(double: result.grossAmountProfit)
+//            profitabilityValueLabel.accessibilityLabel = investmentResultViewModel.toBrazilianReal(double: result.grossAmountProfit)
         }
     }
 }

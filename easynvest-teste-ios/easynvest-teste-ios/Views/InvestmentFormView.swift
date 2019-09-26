@@ -28,7 +28,6 @@ class InvestmentFormView: UIView {
             investedAmountTextField.delegate = self
             investedAmountTextField.isAccessibilityElement = true
             investedAmountTextField.accessibilityLabel = Labels.kInvestedAmountTextField
-            investedAmountTextField.accessibilityTraits = .searchField
         }
     }
     @IBOutlet weak var maturityDateLabel: UILabel! {
@@ -43,7 +42,6 @@ class InvestmentFormView: UIView {
             maturityDateTextField.delegate = self
             maturityDateTextField.isAccessibilityElement = true
             maturityDateTextField.accessibilityLabel = Labels.kMaturityDateTextField
-            maturityDateTextField.accessibilityTraits = .searchField
         }
     }
     @IBOutlet weak var investmentCDIRateLabel: UILabel! {
@@ -58,7 +56,6 @@ class InvestmentFormView: UIView {
             investmentCDIRateTextField.delegate = self
             investmentCDIRateTextField.isAccessibilityElement = true
             investmentCDIRateTextField.accessibilityLabel = Labels.kInvestmentCDIRateTextField
-            investmentCDIRateTextField.accessibilityTraits = .searchField
             investmentCDIRateTextField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: UIControl.Event.editingChanged)
         }
     }

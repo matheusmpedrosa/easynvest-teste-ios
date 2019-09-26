@@ -26,7 +26,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="zZc-lc-Oau">
                                                 <rect key="frame" x="0.0" y="0.0" width="382" height="81"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quanto você gostaria de aplicar? *" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIw-uO-LyG">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quanto você gostaria de aplicar? *" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIw-uO-LyG">
                                                         <rect key="frame" x="0.0" y="0.0" width="382" height="20"/>
                                                         <accessibility key="accessibilityConfiguration" label="Quanto você gostaria de aplicar? *"/>
                                                         <constraints>
@@ -39,7 +39,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gwD-DY-q34">
                                                         <rect key="frame" x="0.0" y="35" width="382" height="46"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="R$" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="3iE-OD-7es">
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="R$" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="3iE-OD-7es">
                                                                 <rect key="frame" x="0.0" y="0.0" width="382" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="40" id="zr0-lk-WyS"/>
@@ -64,7 +64,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="oHj-Xk-J3O">
                                                 <rect key="frame" x="0.0" y="121" width="382" height="81"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual a data de vencimento do investimento? *" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2V-4F-uuP">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual a data de vencimento do investimento? *" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2V-4F-uuP">
                                                         <rect key="frame" x="0.0" y="0.0" width="382" height="20"/>
                                                         <accessibility key="accessibilityConfiguration" label="Qual a data de vencimento do investimento? *"/>
                                                         <constraints>
@@ -77,7 +77,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="TB2-7D-RB5">
                                                         <rect key="frame" x="0.0" y="35" width="382" height="46"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="dia/mês/ano" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="LGY-l8-4wS">
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="dia/mês/ano" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="LGY-l8-4wS">
                                                                 <rect key="frame" x="0.0" y="0.0" width="382" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="40" id="pej-e7-tXg"/>
@@ -103,7 +103,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="XAw-JD-9di">
                                                 <rect key="frame" x="0.0" y="242" width="382" height="81"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual o percentual do CDI do investimento? *" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ic2-9J-NqT">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual o percentual do CDI do investimento? *" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ic2-9J-NqT">
                                                         <rect key="frame" x="0.0" y="0.0" width="382" height="20"/>
                                                         <accessibility key="accessibilityConfiguration" label="Qual o percentual do CDI do investimento? *"/>
                                                         <constraints>
@@ -116,7 +116,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="OV1-Ye-fzT">
                                                         <rect key="frame" x="0.0" y="35" width="382" height="46"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="100%" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="fE8-x8-kdA">
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="100%" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="fE8-x8-kdA">
                                                                 <rect key="frame" x="0.0" y="0.0" width="382" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="40" id="fYp-fb-r7Q"/>
@@ -209,7 +209,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yuw-C2-5ZY" customClass="InvestmentResultView" customModule="easynvest_teste_ios" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resultado da simulação" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6rq-hy-L0G">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resultado da simulação" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6rq-hy-L0G">
                                         <rect key="frame" x="121" y="60" width="172" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="7qv-4A-WgX"/>
@@ -218,22 +218,22 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 1.000,00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sw-Nz-EWq">
-                                        <rect key="frame" x="84.5" y="95" width="245" height="54"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 1.000,00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6sw-Nz-EWq">
+                                        <rect key="frame" x="16" y="95" width="382" height="54"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Sdb-lU-0fa">
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Sdb-lU-0fa">
                                         <rect key="frame" x="92" y="164" width="230.5" height="19.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rendimento total de" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2nB-c2-XiK">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rendimento total de" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2nB-c2-XiK">
                                                 <rect key="frame" x="0.0" y="0.0" width="146" height="19.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 100,00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ggf-ps-OUA">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 100,00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ggf-ps-OUA">
                                                 <rect key="frame" x="151" y="0.0" width="79.5" height="19.5"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                 <color key="textColor" name="clr-easynvest-green"/>
@@ -252,14 +252,14 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="u4B-nR-SlX">
+                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="u4B-nR-SlX">
                                                             <rect key="frame" x="20" y="12" width="31.5" height="19.5"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nx0-gP-jVj">
+                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="nx0-gP-jVj">
                                                             <rect key="frame" x="352.5" y="12" width="41.5" height="19.5"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -274,12 +274,15 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="6sw-Nz-EWq" firstAttribute="centerX" secondItem="Yuw-C2-5ZY" secondAttribute="centerX" id="9hX-wS-D5b"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Sdb-lU-0fa" secondAttribute="trailing" constant="16" id="5ho-Ab-9Kz"/>
                                     <constraint firstItem="HlT-OA-Ho3" firstAttribute="leading" secondItem="Yuw-C2-5ZY" secondAttribute="leading" id="G9l-uY-0Dq"/>
+                                    <constraint firstItem="Sdb-lU-0fa" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Yuw-C2-5ZY" secondAttribute="leading" constant="16" id="MOx-lo-U3b"/>
                                     <constraint firstItem="Sdb-lU-0fa" firstAttribute="centerX" secondItem="Yuw-C2-5ZY" secondAttribute="centerX" id="N78-5k-3ya"/>
                                     <constraint firstItem="6sw-Nz-EWq" firstAttribute="top" secondItem="6rq-hy-L0G" secondAttribute="bottom" constant="15" id="d0N-bK-KNI"/>
                                     <constraint firstItem="Sdb-lU-0fa" firstAttribute="top" secondItem="6sw-Nz-EWq" secondAttribute="bottom" constant="15" id="dKL-pg-fMB"/>
                                     <constraint firstItem="6rq-hy-L0G" firstAttribute="centerX" secondItem="Yuw-C2-5ZY" secondAttribute="centerX" id="eeS-Rg-ZPJ"/>
+                                    <constraint firstItem="6sw-Nz-EWq" firstAttribute="leading" secondItem="Yuw-C2-5ZY" secondAttribute="leading" constant="16" id="oYi-H3-cd6"/>
+                                    <constraint firstAttribute="trailing" secondItem="6sw-Nz-EWq" secondAttribute="trailing" constant="16" id="uO0-MM-CKi"/>
                                     <constraint firstItem="HlT-OA-Ho3" firstAttribute="top" secondItem="Sdb-lU-0fa" secondAttribute="bottom" constant="5" id="vMv-4M-UAy"/>
                                     <constraint firstAttribute="trailing" secondItem="HlT-OA-Ho3" secondAttribute="trailing" id="yJm-2n-Mk0"/>
                                 </constraints>
