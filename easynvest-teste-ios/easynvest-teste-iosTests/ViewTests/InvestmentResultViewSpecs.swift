@@ -1,5 +1,5 @@
 //
-//  InvestmentResultViewTests.swift
+//  InvestmentResultViewSpecs.swift
 //  easynvest-teste-iosTests
 //
 //  Created by Matheus Pedrosa on 9/27/19.
@@ -11,7 +11,7 @@ import Quick
 import Nimble
 @testable import easynvest_teste_ios
 
-class InvestmentResultViewTests: QuickSpec {
+class InvestmentResultViewSpecs: QuickSpec {
     override func spec() {
         var sut: InvestmentResultView!
         describe("'The InvestmentResultView'") {

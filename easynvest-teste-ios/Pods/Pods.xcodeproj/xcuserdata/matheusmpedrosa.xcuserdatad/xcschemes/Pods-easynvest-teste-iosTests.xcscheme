@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D783173A3D5B1944E8F6BE922B1ADBB3"
-               BuildableName = "Pods_easynvest_teste_ios_easynvest_teste_iosTests.framework"
-               BlueprintName = "Pods-easynvest-teste-ios-easynvest-teste-iosTests"
+               BlueprintIdentifier = "96910998B392CF2E25075D5D89320685"
+               BuildableName = "libPods-easynvest-teste-iosTests.a"
+               BlueprintName = "Pods-easynvest-teste-iosTests"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

@@ -1,5 +1,5 @@
 //
-//  InvestmentFormViewTests.swift
+//  InvestmentFormViewSpecs.swift
 //  easynvest-teste-iosTests
 //
 //  Created by Matheus Pedrosa on 9/26/19.
@@ -11,7 +11,7 @@ import Quick
 import Nimble
 @testable import easynvest_teste_ios
 
-class InvestmentFormViewTests: QuickSpec {
+class InvestmentFormViewSpecs: QuickSpec {
     override func spec() {
         var sut: InvestmentFormView!
         describe("The 'InvestmentFormView'") {

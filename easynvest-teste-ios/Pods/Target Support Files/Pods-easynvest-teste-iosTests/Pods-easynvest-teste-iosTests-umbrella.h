@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_easynvest_teste_ios_easynvest_teste_iosTestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_easynvest_teste_ios_easynvest_teste_iosTestsVersionString[];
+FOUNDATION_EXPORT double Pods_easynvest_teste_iosTestsVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_easynvest_teste_iosTestsVersionString[];
 

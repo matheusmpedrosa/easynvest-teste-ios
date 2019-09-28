@@ -10,8 +10,8 @@
 		382366598A357D290C1AE53D /* Pods_easynvest_teste_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8869649B48FCC143CCA221F /* Pods_easynvest_teste_ios.framework */; };
 		8017818B233D908B00257871 /* EasynvestTesteIosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8017818A233D908B00257871 /* EasynvestTesteIosTests.swift */; };
 		80178194233D931F00257871 /* InvestmentFormViewControllerSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80178193233D931F00257871 /* InvestmentFormViewControllerSpecs.swift */; };
-		80178197233D9C7100257871 /* InvestmentFormViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80178196233D9C7100257871 /* InvestmentFormViewTests.swift */; };
-		8017819D233FCBF000257871 /* InvestmentResultViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8017819A233EBA0000257871 /* InvestmentResultViewTests.swift */; };
+		80178197233D9C7100257871 /* InvestmentFormViewSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80178196233D9C7100257871 /* InvestmentFormViewSpecs.swift */; };
+		8017819D233FCBF000257871 /* InvestmentResultViewSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8017819A233EBA0000257871 /* InvestmentResultViewSpecs.swift */; };
 		801781A0233FCCDA00257871 /* easynvest_simulator_response.json in Resources */ = {isa = PBXBuildFile; fileRef = 8017819F233FCCDA00257871 /* easynvest_simulator_response.json */; };
 		80BE5D8B2336CF46009B90C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BE5D8A2336CF46009B90C7 /* AppDelegate.swift */; };
 		80BE5D902336CF46009B90C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80BE5D8E2336CF46009B90C7 /* Main.storyboard */; };
@@ -31,6 +31,8 @@
 		80BE5DC023385AEC009B90C7 /* InvestmentFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BE5DBF23385AEC009B90C7 /* InvestmentFormViewModel.swift */; };
 		80C898FC233A9574003958AC /* SimulateAgainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C898FB233A9574003958AC /* SimulateAgainView.swift */; };
 		80C898FF233C5042003958AC /* Contants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C898FE233C5042003958AC /* Contants.swift */; };
+		80D4F9952340203B001613BB /* SimulateAgainViewSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D4F9942340203B001613BB /* SimulateAgainViewSpecs.swift */; };
+		80D4F9972340228A001613BB /* InvestmentResultViewControllerSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D4F9962340228A001613BB /* InvestmentResultViewControllerSpecs.swift */; };
 		80D925E7233A8EC100929952 /* UIViewControllerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D925E6233A8EC100929952 /* UIViewControllerUtils.swift */; };
 		80D925E9233A90D400929952 /* SimulateAgainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80D925E8233A90D400929952 /* SimulateAgainView.xib */; };
 		80E4E68523399F5F0089A6E2 /* InvestmentResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E4E68423399F5F0089A6E2 /* InvestmentResultViewModel.swift */; };
@@ -55,8 +57,8 @@
 		8017818A233D908B00257871 /* EasynvestTesteIosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasynvestTesteIosTests.swift; sourceTree = "<group>"; };
 		8017818C233D908B00257871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80178193233D931F00257871 /* InvestmentFormViewControllerSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentFormViewControllerSpecs.swift; sourceTree = "<group>"; };
-		80178196233D9C7100257871 /* InvestmentFormViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentFormViewTests.swift; sourceTree = "<group>"; };
-		8017819A233EBA0000257871 /* InvestmentResultViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentResultViewTests.swift; sourceTree = "<group>"; };
+		80178196233D9C7100257871 /* InvestmentFormViewSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentFormViewSpecs.swift; sourceTree = "<group>"; };
+		8017819A233EBA0000257871 /* InvestmentResultViewSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentResultViewSpecs.swift; sourceTree = "<group>"; };
 		8017819F233FCCDA00257871 /* easynvest_simulator_response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = easynvest_simulator_response.json; sourceTree = "<group>"; };
 		80BE5D872336CF46009B90C7 /* easynvest-teste-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "easynvest-teste-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80BE5D8A2336CF46009B90C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,8 @@
 		80BE5DBF23385AEC009B90C7 /* InvestmentFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentFormViewModel.swift; sourceTree = "<group>"; };
 		80C898FB233A9574003958AC /* SimulateAgainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulateAgainView.swift; sourceTree = "<group>"; };
 		80C898FE233C5042003958AC /* Contants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contants.swift; sourceTree = "<group>"; };
+		80D4F9942340203B001613BB /* SimulateAgainViewSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulateAgainViewSpecs.swift; sourceTree = "<group>"; };
+		80D4F9962340228A001613BB /* InvestmentResultViewControllerSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentResultViewControllerSpecs.swift; sourceTree = "<group>"; };
 		80D925E6233A8EC100929952 /* UIViewControllerUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerUtils.swift; sourceTree = "<group>"; };
 		80D925E8233A90D400929952 /* SimulateAgainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimulateAgainView.xib; sourceTree = "<group>"; };
 		80E4E68423399F5F0089A6E2 /* InvestmentResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentResultViewModel.swift; sourceTree = "<group>"; };
@@ -147,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				80178193233D931F00257871 /* InvestmentFormViewControllerSpecs.swift */,
+				80D4F9962340228A001613BB /* InvestmentResultViewControllerSpecs.swift */,
 			);
 			path = ViewControllersTests;
 			sourceTree = "<group>";
@@ -154,8 +159,9 @@
 		80178195233D9C5300257871 /* ViewTests */ = {
 			isa = PBXGroup;
 			children = (
-				80178196233D9C7100257871 /* InvestmentFormViewTests.swift */,
-				8017819A233EBA0000257871 /* InvestmentResultViewTests.swift */,
+				80D4F9932340201D001613BB /* Cells */,
+				80178196233D9C7100257871 /* InvestmentFormViewSpecs.swift */,
+				8017819A233EBA0000257871 /* InvestmentResultViewSpecs.swift */,
 			);
 			path = ViewTests;
 			sourceTree = "<group>";
@@ -271,6 +277,14 @@
 				80E4E68423399F5F0089A6E2 /* InvestmentResultViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		80D4F9932340201D001613BB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				80D4F9942340203B001613BB /* SimulateAgainViewSpecs.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		80D925E5233A8EA500929952 /* Utils */ = {
@@ -484,8 +498,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8017819D233FCBF000257871 /* InvestmentResultViewTests.swift in Sources */,
-				80178197233D9C7100257871 /* InvestmentFormViewTests.swift in Sources */,
+				80D4F9952340203B001613BB /* SimulateAgainViewSpecs.swift in Sources */,
+				80D4F9972340228A001613BB /* InvestmentResultViewControllerSpecs.swift in Sources */,
+				8017819D233FCBF000257871 /* InvestmentResultViewSpecs.swift in Sources */,
+				80178197233D9C7100257871 /* InvestmentFormViewSpecs.swift in Sources */,
 				80178194233D931F00257871 /* InvestmentFormViewControllerSpecs.swift in Sources */,
 				8017818B233D908B00257871 /* EasynvestTesteIosTests.swift in Sources */,
 			);
