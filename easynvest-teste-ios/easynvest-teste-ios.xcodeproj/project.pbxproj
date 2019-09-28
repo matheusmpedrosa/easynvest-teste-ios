@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		382366598A357D290C1AE53D /* Pods_easynvest_teste_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8869649B48FCC143CCA221F /* Pods_easynvest_teste_ios.framework */; };
+		8017818B233D908B00257871 /* EasynvestTesteIosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8017818A233D908B00257871 /* EasynvestTesteIosTests.swift */; };
+		80178194233D931F00257871 /* InvestmentFormViewControllerSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80178193233D931F00257871 /* InvestmentFormViewControllerSpecs.swift */; };
+		80178197233D9C7100257871 /* InvestmentFormViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80178196233D9C7100257871 /* InvestmentFormViewTests.swift */; };
+		8017819D233FCBF000257871 /* InvestmentResultViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8017819A233EBA0000257871 /* InvestmentResultViewTests.swift */; };
+		801781A0233FCCDA00257871 /* easynvest_simulator_response.json in Resources */ = {isa = PBXBuildFile; fileRef = 8017819F233FCCDA00257871 /* easynvest_simulator_response.json */; };
 		80BE5D8B2336CF46009B90C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BE5D8A2336CF46009B90C7 /* AppDelegate.swift */; };
 		80BE5D902336CF46009B90C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80BE5D8E2336CF46009B90C7 /* Main.storyboard */; };
 		80BE5D922336CF47009B90C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80BE5D912336CF47009B90C7 /* Assets.xcassets */; };
@@ -29,12 +34,30 @@
 		80D925E7233A8EC100929952 /* UIViewControllerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D925E6233A8EC100929952 /* UIViewControllerUtils.swift */; };
 		80D925E9233A90D400929952 /* SimulateAgainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80D925E8233A90D400929952 /* SimulateAgainView.xib */; };
 		80E4E68523399F5F0089A6E2 /* InvestmentResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E4E68423399F5F0089A6E2 /* InvestmentResultViewModel.swift */; };
-		80E4E692233A59930089A6E2 /* RightDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E4E691233A59930089A6E2 /* RightDetailTableViewCell.swift */; };
+		C3003D997036A86713544E3E /* libPods-easynvest-teste-iosTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1586CE8995C0F2E04D015DA7 /* libPods-easynvest-teste-iosTests.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8017818D233D908B00257871 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80BE5D7F2336CF46009B90C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80BE5D862336CF46009B90C7;
+			remoteInfo = "easynvest-teste-ios";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		1586CE8995C0F2E04D015DA7 /* libPods-easynvest-teste-iosTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-easynvest-teste-iosTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F918D2B7AB0C33DE42072AE /* Pods-easynvest-teste-ios-easynvest-teste-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-easynvest-teste-ios-easynvest-teste-iosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-easynvest-teste-ios-easynvest-teste-iosTests/Pods-easynvest-teste-ios-easynvest-teste-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
 		69232BF40FD33F2BE7698CDB /* Pods-easynvest-teste-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-easynvest-teste-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-easynvest-teste-ios/Pods-easynvest-teste-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		80178188233D908B00257871 /* easynvest-teste-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "easynvest-teste-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8017818A233D908B00257871 /* EasynvestTesteIosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasynvestTesteIosTests.swift; sourceTree = "<group>"; };
+		8017818C233D908B00257871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80178193233D931F00257871 /* InvestmentFormViewControllerSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentFormViewControllerSpecs.swift; sourceTree = "<group>"; };
+		80178196233D9C7100257871 /* InvestmentFormViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentFormViewTests.swift; sourceTree = "<group>"; };
+		8017819A233EBA0000257871 /* InvestmentResultViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentResultViewTests.swift; sourceTree = "<group>"; };
+		8017819F233FCCDA00257871 /* easynvest_simulator_response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = easynvest_simulator_response.json; sourceTree = "<group>"; };
 		80BE5D872336CF46009B90C7 /* easynvest-teste-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "easynvest-teste-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80BE5D8A2336CF46009B90C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80BE5D8F2336CF46009B90C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,14 +81,23 @@
 		80D925E6233A8EC100929952 /* UIViewControllerUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerUtils.swift; sourceTree = "<group>"; };
 		80D925E8233A90D400929952 /* SimulateAgainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimulateAgainView.xib; sourceTree = "<group>"; };
 		80E4E68423399F5F0089A6E2 /* InvestmentResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentResultViewModel.swift; sourceTree = "<group>"; };
-		80E4E691233A59930089A6E2 /* RightDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightDetailTableViewCell.swift; sourceTree = "<group>"; };
+		983F669F7BC32B7583B12C25 /* Pods-easynvest-teste-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-easynvest-teste-iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-easynvest-teste-iosTests/Pods-easynvest-teste-iosTests.release.xcconfig"; sourceTree = "<group>"; };
 		A1632827DC7AF9609A163323 /* Pods-easynvest-teste-ios-easynvest-teste-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-easynvest-teste-ios-easynvest-teste-iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-easynvest-teste-ios-easynvest-teste-iosTests/Pods-easynvest-teste-ios-easynvest-teste-iosTests.release.xcconfig"; sourceTree = "<group>"; };
 		B7C3EE12078EBF5AFE5AF6EC /* Pods_easynvest_teste_ios_easynvest_teste_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_easynvest_teste_ios_easynvest_teste_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4D6E4EC192B3456B39E6702 /* Pods-easynvest-teste-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-easynvest-teste-iosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-easynvest-teste-iosTests/Pods-easynvest-teste-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C8869649B48FCC143CCA221F /* Pods_easynvest_teste_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_easynvest_teste_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F211E9F7E7D521CA776411D4 /* Pods-easynvest-teste-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-easynvest-teste-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-easynvest-teste-ios/Pods-easynvest-teste-ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		80178185233D908B00257871 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3003D997036A86713544E3E /* libPods-easynvest-teste-iosTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		80BE5D842336CF46009B90C7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -82,6 +114,7 @@
 			children = (
 				C8869649B48FCC143CCA221F /* Pods_easynvest_teste_ios.framework */,
 				B7C3EE12078EBF5AFE5AF6EC /* Pods_easynvest_teste_ios_easynvest_teste_iosTests.framework */,
+				1586CE8995C0F2E04D015DA7 /* libPods-easynvest-teste-iosTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -93,14 +126,45 @@
 				F211E9F7E7D521CA776411D4 /* Pods-easynvest-teste-ios.release.xcconfig */,
 				5F918D2B7AB0C33DE42072AE /* Pods-easynvest-teste-ios-easynvest-teste-iosTests.debug.xcconfig */,
 				A1632827DC7AF9609A163323 /* Pods-easynvest-teste-ios-easynvest-teste-iosTests.release.xcconfig */,
+				C4D6E4EC192B3456B39E6702 /* Pods-easynvest-teste-iosTests.debug.xcconfig */,
+				983F669F7BC32B7583B12C25 /* Pods-easynvest-teste-iosTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		80178189233D908B00257871 /* easynvest-teste-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				80178195233D9C5300257871 /* ViewTests */,
+				80178192233D928400257871 /* ViewControllersTests */,
+				8017818A233D908B00257871 /* EasynvestTesteIosTests.swift */,
+				8017818C233D908B00257871 /* Info.plist */,
+			);
+			path = "easynvest-teste-iosTests";
+			sourceTree = "<group>";
+		};
+		80178192233D928400257871 /* ViewControllersTests */ = {
+			isa = PBXGroup;
+			children = (
+				80178193233D931F00257871 /* InvestmentFormViewControllerSpecs.swift */,
+			);
+			path = ViewControllersTests;
+			sourceTree = "<group>";
+		};
+		80178195233D9C5300257871 /* ViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				80178196233D9C7100257871 /* InvestmentFormViewTests.swift */,
+				8017819A233EBA0000257871 /* InvestmentResultViewTests.swift */,
+			);
+			path = ViewTests;
 			sourceTree = "<group>";
 		};
 		80BE5D7E2336CF46009B90C7 = {
 			isa = PBXGroup;
 			children = (
 				80BE5D892336CF46009B90C7 /* easynvest-teste-ios */,
+				80178189233D908B00257871 /* easynvest-teste-iosTests */,
 				80BE5D882336CF46009B90C7 /* Products */,
 				4D51292EB4BFF9B1FE102AFC /* Pods */,
 				21F5A97CB0503805DF8D576E /* Frameworks */,
@@ -111,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				80BE5D872336CF46009B90C7 /* easynvest-teste-ios.app */,
+				80178188233D908B00257871 /* easynvest-teste-iosTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,6 +199,7 @@
 		80BE5D9C2336D049009B90C7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8017819F233FCCDA00257871 /* easynvest_simulator_response.json */,
 				80BE5D912336CF47009B90C7 /* Assets.xcassets */,
 				80BE5D932336CF47009B90C7 /* LaunchScreen.storyboard */,
 				80BE5D962336CF47009B90C7 /* Info.plist */,
@@ -218,7 +284,6 @@
 		80E4E693233A59DC0089A6E2 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				80E4E691233A59930089A6E2 /* RightDetailTableViewCell.swift */,
 				80D925E8233A90D400929952 /* SimulateAgainView.xib */,
 				80C898FB233A9574003958AC /* SimulateAgainView.swift */,
 			);
@@ -228,6 +293,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		80178187233D908B00257871 /* easynvest-teste-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80178191233D908B00257871 /* Build configuration list for PBXNativeTarget "easynvest-teste-iosTests" */;
+			buildPhases = (
+				F3BDE9E99918E37549F2EDC1 /* [CP] Check Pods Manifest.lock */,
+				80178184233D908B00257871 /* Sources */,
+				80178185233D908B00257871 /* Frameworks */,
+				80178186233D908B00257871 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8017818E233D908B00257871 /* PBXTargetDependency */,
+			);
+			name = "easynvest-teste-iosTests";
+			productName = "easynvest-teste-iosTests";
+			productReference = 80178188233D908B00257871 /* easynvest-teste-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		80BE5D862336CF46009B90C7 /* easynvest-teste-ios */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 80BE5D992336CF47009B90C7 /* Build configuration list for PBXNativeTarget "easynvest-teste-ios" */;
@@ -258,6 +342,10 @@
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = M2P;
 				TargetAttributes = {
+					80178187233D908B00257871 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 80BE5D862336CF46009B90C7;
+					};
 					80BE5D862336CF46009B90C7 = {
 						CreatedOnToolsVersion = 10.3;
 					};
@@ -277,15 +365,24 @@
 			projectRoot = "";
 			targets = (
 				80BE5D862336CF46009B90C7 /* easynvest-teste-ios */,
+				80178187233D908B00257871 /* easynvest-teste-iosTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		80178186233D908B00257871 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		80BE5D852336CF46009B90C7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				801781A0233FCCDA00257871 /* easynvest_simulator_response.json in Resources */,
 				80BE5D952336CF47009B90C7 /* LaunchScreen.storyboard in Resources */,
 				80BE5D922336CF47009B90C7 /* Assets.xcassets in Resources */,
 				80D925E9233A90D400929952 /* SimulateAgainView.xib in Resources */,
@@ -358,9 +455,42 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F3BDE9E99918E37549F2EDC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-easynvest-teste-iosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		80178184233D908B00257871 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8017819D233FCBF000257871 /* InvestmentResultViewTests.swift in Sources */,
+				80178197233D9C7100257871 /* InvestmentFormViewTests.swift in Sources */,
+				80178194233D931F00257871 /* InvestmentFormViewControllerSpecs.swift in Sources */,
+				8017818B233D908B00257871 /* EasynvestTesteIosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		80BE5D832336CF46009B90C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -379,7 +509,6 @@
 				80BE5DB823384946009B90C7 /* APIInvestmentRepository.swift in Sources */,
 				80BE5DAB233840F1009B90C7 /* InvestmentParameter.swift in Sources */,
 				80BE5DA22336D0B4009B90C7 /* InvestmentFormView.swift in Sources */,
-				80E4E692233A59930089A6E2 /* RightDetailTableViewCell.swift in Sources */,
 				80C898FC233A9574003958AC /* SimulateAgainView.swift in Sources */,
 				80BE5DB223384365009B90C7 /* InvestmentDTOMapper.swift in Sources */,
 				80BE5DC023385AEC009B90C7 /* InvestmentFormViewModel.swift in Sources */,
@@ -387,6 +516,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8017818E233D908B00257871 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80BE5D862336CF46009B90C7 /* easynvest-teste-ios */;
+			targetProxy = 8017818D233D908B00257871 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		80BE5D8E2336CF46009B90C7 /* Main.storyboard */ = {
@@ -408,6 +545,50 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8017818F233D908B00257871 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4D6E4EC192B3456B39E6702 /* Pods-easynvest-teste-iosTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R95CT9ATA8;
+				INFOPLIST_FILE = "easynvest-teste-iosTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.m2p.easynvest-teste-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/easynvest-teste-ios.app/easynvest-teste-ios";
+			};
+			name = Debug;
+		};
+		80178190233D908B00257871 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 983F669F7BC32B7583B12C25 /* Pods-easynvest-teste-iosTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R95CT9ATA8;
+				INFOPLIST_FILE = "easynvest-teste-iosTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.m2p.easynvest-teste-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/easynvest-teste-ios.app/easynvest-teste-ios";
+			};
+			name = Release;
+		};
 		80BE5D972336CF47009B90C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -569,6 +750,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		80178191233D908B00257871 /* Build configuration list for PBXNativeTarget "easynvest-teste-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8017818F233D908B00257871 /* Debug */,
+				80178190233D908B00257871 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		80BE5D822336CF46009B90C7 /* Build configuration list for PBXProject "easynvest-teste-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

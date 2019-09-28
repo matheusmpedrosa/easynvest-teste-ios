@@ -98,7 +98,6 @@ extension InvestmentResultView: InvestmentResultViewControllerProtocol {
             investmentResultValueLabel.accessibilityLabel = investmentResultViewModel.toBrazilianReal(double: result.grossAmount)
 
             profitabilityValueLabel.text = investmentResultViewModel.toBrazilianReal(double: result.grossAmountProfit)
-//            profitabilityValueLabel.accessibilityLabel = investmentResultViewModel.toBrazilianReal(double: result.grossAmountProfit)
         }
     }
 }

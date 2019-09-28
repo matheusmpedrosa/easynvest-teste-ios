@@ -33,7 +33,7 @@ class InvestmentResultViewModel {
     func convertDate(from string: String) -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
-//        dateFormatter.locale = Locale(identifier: "pt_BR")
+        dateFormatter.locale = Locale(identifier: "pt_BR")
         if let date = dateFormatter.date(from: string) {
             return self.dateToString(from: date)
         }

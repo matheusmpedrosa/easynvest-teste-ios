@@ -25,6 +25,7 @@ struct Alerts {
 }
 
 struct ViewControllers {
+    static let kFormViewController = "InvestmentFormViewController"
     static let kResultViewController = "InvestmentResultViewController"
 }
 
